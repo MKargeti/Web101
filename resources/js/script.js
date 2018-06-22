@@ -362,7 +362,7 @@
 
                 }
             };
-            xmlhttp.open("GET", "/web101/resources/js/product-json.txt", true);
+            xmlhttp.open("GET", "/Web101/resources/js/product-json.txt", true);
             xmlhttp.send();
         };
 
