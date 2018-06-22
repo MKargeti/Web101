@@ -363,7 +363,7 @@
 
                 }
             };
-			serverURL=UICtrl.DOMstrings.serverURL;
+			serverURL=UICtrl.DOM.serverURL;
             xmlhttp.open("GET", serverURL, true);
             xmlhttp.send();
         };
