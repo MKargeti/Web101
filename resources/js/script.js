@@ -172,8 +172,7 @@
             popUpItemImage:'.item--img',
             popUpItemSize:'size',
             popUpItemQuantity:'quantity',
-            popUpItemPrice:'price',
-			serverURL:'https://mkargeti.github.io/Web101/resources/js/product-json.txt'
+            popUpItemPrice:'price'
         };
 
         // format the number to 2 decimal places
@@ -344,7 +343,7 @@
         };
 
         var bindProducts = function () {
-            var xmlhttp, arrProducts, cartInfo, priceInfo,serverURL;
+            var xmlhttp, arrProducts, cartInfo, priceInfo;
 
             xmlhttp = new XMLHttpRequest();
             xmlhttp.onreadystatechange = function () {
@@ -363,8 +362,7 @@
 
                 }
             };
-			serverURL=UICtrl.DOM.serverURL;
-            xmlhttp.open("GET", serverURL, true);
+            xmlhttp.open("GET", "/web101/resources/js/product-json.txt", true);
             xmlhttp.send();
         };
 
